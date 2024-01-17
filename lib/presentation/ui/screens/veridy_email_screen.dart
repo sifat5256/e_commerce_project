@@ -1,7 +1,9 @@
 
 
+import 'package:crafty_bay/presentation/ui/screens/veridy_otp_screen.dart';
 import 'package:crafty_bay/presentation/ui/widgets/app_logo.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key});
@@ -18,6 +20,9 @@ class VerifyEmailScreen extends StatelessWidget {
             ),
             const AppLogo(
               height: 80,
+            ),
+            const SizedBox(
+              height: 15,
             ),
              Text("Welcome Back",style: Theme.of(context).textTheme.titleLarge,),
             const SizedBox(
@@ -39,7 +44,9 @@ class VerifyEmailScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
 
-                child: ElevatedButton(onPressed: (){}, child: Text("Next",style: TextStyle(
+                child: ElevatedButton(onPressed: (){
+                  Get.to(const VerifyOtpScreen());
+                }, child: const Text("Next",style: TextStyle(
                   color: Colors.white
                 ),))),
 
