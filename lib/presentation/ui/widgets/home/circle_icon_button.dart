@@ -18,7 +18,7 @@ class CircleIcon extends StatelessWidget {
         backgroundColor: Colors.grey.shade300,
         child: Icon(
           iconData,
-          color: Colors.grey,
+          color: Colors.black,
           size: 20,
         ),
       ),
